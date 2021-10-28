@@ -1,6 +1,6 @@
 # Enfocado for VS Code
 
-![Banner](https://github.com/wuelnerdotexe/vscode-enfocado/blob/main/images/banner.png)
+![Banner](https://raw.githubusercontent.com/wuelnerdotexe/vscode-enfocado/main/images/banner.png)
 
 [![License Badge](https://img.shields.io/badge/License-MIT-3FC5B7.svg?style=for-the-badge)](https://github.com/wuelnerdotexe/vscode-enfocado/blob/main/LICENSE)
 [![README Style Badge](https://img.shields.io/badge/README%20Style-Standard-3FC5B7.svg?style=for-the-badge)](https://github.com/RichardLitt/standard-readme)
@@ -19,18 +19,15 @@ The features of this theme are:
 - What is not important, is dimmed, **really minimalist**.
 - Human writing (italicized) is simulated for syntax groups (comments, methods, titles, and more...) that are usually written with **human language**.
 
-<figure align="center">
-  <img src="https://github.com/wuelnerdotexe/vscode-enfocado/blob/main/images/nature.png">
-  <figcaption>
-    <small>Enfocado Nature</small>
-  </figcaption>
-</figure>
-<figure align="center">
-  <img src="https://github.com/wuelnerdotexe/vscode-enfocado/blob/main/images/neon.png">
-  <figcaption>
-    <small>Enfocado Neon</small>
-  </figcaption>
-</figure>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/wuelnerdotexe/vscode-enfocado/main/images/nature.png">
+  <small>Enfocado Nature</small>
+</div>
+<br />
+<div align="center">
+  <img src="https://raw.githubusercontent.com/wuelnerdotexe/vscode-enfocado/main/images/neon.png">
+  <small>Enfocado Neon</small>
+</div>
 
 ## Table of Contents
 
@@ -47,8 +44,8 @@ The features of this theme are:
 1. Go to [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=wuelnerdotexe.vscode-enfocado).
 2. Click on the "Install" button.
 3. Then [select a theme](https://code.visualstudio.com/docs/getstarted/themes#_selecting-the-color-theme):
-    - `Enfocado Nature`
-    - `Enfocado Neon`
+   - `Enfocado Nature`
+   - `Enfocado Neon`
 
 ## Recommendations
 
