@@ -1,0 +1,52 @@
+{
+  "name": "vscode-enfocado",
+  "displayName": "Enfocado",
+  "version": "1.0.0",
+  "publisher": "wuelnerdotexe",
+  "description": "How themes should be.",
+  "author": {
+    "name": "Wuelner Martínez",
+    "email": "wuelner.martinez@outlook.com",
+    "url": "https://wuelnerdotexe.github.io"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Enfocado Nature",
+        "uiTheme": "vs-dark",
+        "path": "./themes/enfocado-nature.json"
+      },
+      {
+        "label": "Enfocado Neon",
+        "uiTheme": "vs-dark",
+        "path": "./themes/enfocado-neon.json"
+      }
+    ]
+  },
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#181818",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.61.0"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wuelnerdotexe/vscode-enfocado/issues",
+    "email": "wuelner.martinez@outlook.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wuelnerdotexe/vscode-enfocado.git"
+  },
+  "homepage": "https://wuelnerdotexe.github.io/enfocado",
+  "keywords": [
+    "enfocado",
+    "vim-enfocado",
+    "vscode-enfocado"
+  ]
+}
