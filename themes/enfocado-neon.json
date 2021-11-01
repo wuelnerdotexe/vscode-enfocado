@@ -462,9 +462,14 @@
         "meta",
         "meta.block",
         "meta.cast",
+        "meta.class",
+        "meta.function",
+        "meta.function-call",
+        "meta.preprocessor",
+        "meta.return-type",
         "meta.selector",
-        "punctuation.separator",
-        "punctuation.terminator"
+        "meta.type",
+        "meta.type.annotation"
       ],
       "settings": {
         "foreground": "#DEDEDE"
@@ -514,7 +519,12 @@
     },
     {
       "name": "supports",
-      "scope": ["support", "support.other"],
+      "scope": [
+        "support",
+        "support.function",
+        "support.other",
+        "support.variable"
+      ],
       "settings": {
         "foreground": "#A580E2"
       }
@@ -526,8 +536,7 @@
         "variable.name",
         "variable.other",
         "variable.other.readwrite",
-        "variable.parameter",
-        "support.variable"
+        "variable.parameter"
       ],
       "settings": {
         "foreground": "#EB6EB7"
@@ -538,9 +547,7 @@
       "scope": [
         "entity.name.class",
         "entity.name.section",
-        "entity.other.inherited-class",
-        "meta.class",
-        "support.class"
+        "entity.other.inherited-class"
       ],
       "settings": {
         "fontStyle": "bold",
@@ -556,12 +563,7 @@
     },
     {
       "name": "functions",
-      "scope": [
-        "entity.name.function",
-        "meta.function",
-        "meta.function-call",
-        "support.function"
-      ],
+      "scope": ["entity.name.function"],
       "settings": {
         "foreground": "#EB6EB7"
       }
@@ -575,10 +577,11 @@
       }
     },
     {
-      "name": "preprocessors",
-      "scope": ["meta.preprocessor"],
+      "name": "support.class",
+      "scope": ["support.class"],
       "settings": {
-        "foreground": "#A580E2"
+        "fontStyle": "bold",
+        "foreground": "#4F9CFE"
       }
     },
     {
@@ -596,9 +599,6 @@
       "name": "types",
       "scope": [
         "entity.name.type",
-        "meta.type",
-        "meta.return-type",
-        "meta.type.annotation",
         "support.type",
         "support.type.property-name"
       ],
