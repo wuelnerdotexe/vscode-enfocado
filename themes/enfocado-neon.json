@@ -526,7 +526,7 @@
         "support.variable"
       ],
       "settings": {
-        "foreground": "#A580E2"
+        "foreground": "#368AEB"
       }
     },
     {
@@ -610,7 +610,7 @@
       "name": "variable.languajes",
       "scope": ["variable.language"],
       "settings": {
-        "foreground": "#A580E2"
+        "foreground": "#368AEB"
       }
     }
   ]
