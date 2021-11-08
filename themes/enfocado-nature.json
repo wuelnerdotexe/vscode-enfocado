@@ -122,14 +122,14 @@
     "editorInfo.background": "#efc54100",
     "editorInfo.border": "#ff000000",
     "editorGutter.background": "#181818",
-    "editorGutter.modifiedBackground": "#efc541",
-    "editorGutter.addedBackground": "#83c746",
-    "editorGutter.deletedBackground": "#ff5e56",
+    "editorGutter.modifiedBackground": "#dbb32d",
+    "editorGutter.addedBackground": "#70b433",
+    "editorGutter.deletedBackground": "#ed4a46",
     "editorGutter.foldingControlForeground": "#777777",
     "editorCodeLens.foreground": "#777777",
     "editorGroup.border": "#777777",
-    "diffEditor.insertedTextBackground": "#83c74633",
-    "diffEditor.removedTextBackground": "#ff5e5633",
+    "diffEditor.insertedTextBackground": "#70b43333",
+    "diffEditor.removedTextBackground": "#ed4a4633",
     "diffEditor.border": "#777777",
     "panel.background": "#181818",
     "panel.border": "#181818",
@@ -195,15 +195,15 @@
     "notificationCenterHeader.foreground": "#777777",
     "notificationCenterHeader.background": "#252525",
     "notifications.border": "#252525",
-    "gitDecoration.addedResourceForeground": "#83c746",
+    "gitDecoration.addedResourceForeground": "#70b433",
     "gitDecoration.conflictingResourceForeground": "#b891f5",
-    "gitDecoration.deletedResourceForeground": "#ff5e56",
+    "gitDecoration.deletedResourceForeground": "#ed4a46",
     "gitDecoration.ignoredResourceForeground": "#777777",
-    "gitDecoration.modifiedResourceForeground": "#efc541",
-    "gitDecoration.stageDeletedResourceForeground": "#ff5e56",
-    "gitDecoration.stageModifiedResourceForeground": "#efc541",
+    "gitDecoration.modifiedResourceForeground": "#dbb32d",
+    "gitDecoration.stageDeletedResourceForeground": "#ed4a46",
+    "gitDecoration.stageModifiedResourceForeground": "#dbb32d",
     "gitDecoration.submoduleResourceForeground": "#4f9cfe",
-    "gitDecoration.untrackedResourceForeground": "#83c746",
+    "gitDecoration.untrackedResourceForeground": "#70b433",
     "editorMarkerNavigation.background": "#252525",
     "editorMarkerNavigationError.background": "#ff5e56",
     "editorMarkerNavigationWarning.background": "#fa9153",
@@ -243,9 +243,9 @@
     "dropdown.background": "#252525",
     "dropdown.foreground": "#dedede",
     "dropdown.border": "#252525",
-    "minimapGutter.addedBackground": "#83c746",
-    "minimapGutter.modifiedBackground": "#efc541",
-    "minimapGutter.deletedBackground": "#ff5e56",
+    "minimapGutter.addedBackground": "#70b433",
+    "minimapGutter.modifiedBackground": "#dbb32d",
+    "minimapGutter.deletedBackground": "#ed4a46",
     "minimap.findMatchHighlight": "#ff81ca55",
     "minimap.selectionHighlight": "#3b3b3b",
     "minimap.errorHighlight": "#ff5e56",
@@ -393,29 +393,25 @@
     {
       "scope": ["markup.changed"],
       "settings": {
-        "fontStyle": "bold",
-        "foreground": "#EFC541"
+        "foreground": "#DBB32D"
       }
     },
     {
       "scope": ["markup.deleted"],
       "settings": {
-        "fontStyle": "bold",
-        "foreground": "#FF5E56"
+        "foreground": "#ED4A46"
       }
     },
     {
       "scope": ["markup.heading"],
       "settings": {
-        "fontStyle": "bold",
         "foreground": "#4F9CFE"
       }
     },
     {
       "scope": ["markup.inserted"],
       "settings": {
-        "fontStyle": "bold",
-        "foreground": "#83C746"
+        "foreground": "#70B433"
       }
     },
     {
