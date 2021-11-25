@@ -579,21 +579,21 @@
       "scope": ["support.class"],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#4f9cfe"
+        "foreground": "#83c746"
       }
     },
     {
       "name": "supports.functions",
       "scope": ["support.function"],
       "settings": {
-        "foreground": "#4f9cfe"
+        "foreground": "#83c746"
       }
     },
     {
       "name": "supports.variables",
       "scope": ["support.variable"],
       "settings": {
-        "foreground": "#368aeb"
+        "foreground": "#70b433"
       }
     },
     {
@@ -611,7 +611,7 @@
       "name": "variables.languajes",
       "scope": ["variable.language"],
       "settings": {
-        "foreground": "#368aeb"
+        "foreground": "#70b433"
       }
     }
   ]
