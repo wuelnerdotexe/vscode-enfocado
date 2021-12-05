@@ -49,8 +49,8 @@
     "titleBar.inactiveBackground": "#252525",
     "titleBar.inactiveForeground": "#252525",
     "titleBar.border": "#ffffff00",
-    "menubar.selectionForeground": "#dedede",
-    "menubar.selectionBackground": "#3b3b3b",
+    "menubar.selectionForeground": "#70b433",
+    "menubar.selectionBackground": "#ffffff00",
     "menu.foreground": "#b9b9b9",
     "menu.background": "#252525",
     "menu.selectionForeground": "#70b433",
@@ -359,7 +359,6 @@
       "name": "invalids",
       "scope": ["invalid", "invalid.deprecated", "invalid.illegal"],
       "settings": {
-        "fontStyle": "bold",
         "foreground": "#ff5e56"
       }
     },
