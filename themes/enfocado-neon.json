@@ -70,7 +70,7 @@
     "inputOption.activeBackground": "#eb6eb766",
     "inputOption.activeBorder": "#ffffff00",
     "inputOption.activeForeground": "#b9b9b9",
-    "input.placeholderForeground": "#b9b9b9",
+    "input.placeholderForeground": "#777777",
     "textLink.activeForeground": "#ff81ca",
     "textLink.foreground": "#eb6eb7",
     "editor.background": "#181818",
