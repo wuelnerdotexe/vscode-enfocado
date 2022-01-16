@@ -346,7 +346,6 @@
       "name": "entitys",
       "scope": [
         "entity",
-        "entity.name",
         "entity.name.selector",
         "entity.other",
         "entity.other.attribute-name"
@@ -523,6 +522,7 @@
     {
       "name": "supports",
       "scope": [
+        "constant.language.boolean",
         "constant.regexp",
         "string.regexp",
         "support",
@@ -548,13 +548,9 @@
     },
     {
       "name": "classes",
-      "scope": [
-        "entity.name.class",
-        "entity.name.section",
-        "entity.other.inherited-class"
-      ],
+      "scope": ["entity.name.class", "entity.other.inherited-class"],
       "settings": {
-        "fontStyle": "bold",
+        "fontStyle": "italic bold",
         "foreground": "#ff81ca"
       }
     },
@@ -562,6 +558,7 @@
       "name": "functions",
       "scope": ["entity.name.function"],
       "settings": {
+        "fontStyle": "italic",
         "foreground": "#ff81ca"
       }
     },
@@ -570,6 +567,14 @@
       "scope": ["entity.name.method"],
       "settings": {
         "fontStyle": "italic",
+        "foreground": "#ff81ca"
+      }
+    },
+    {
+      "name": "sections",
+      "scope": ["entity.name", "entity.name.section"],
+      "settings": {
+        "fontStyle": "bold",
         "foreground": "#ff81ca"
       }
     },
