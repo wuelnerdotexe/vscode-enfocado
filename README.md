@@ -10,7 +10,7 @@
 What you **won't have** if you **don't install Enfocado**:
 
 - **CIELAB Colors:** use of the well-founded Selenized black color scheme created with the magic of the **CIELAB color space**. Learn about its features and design in its [official repository](https://github.com/jan-warchol/selenized/blob/master/features-and-design.md).
-- **Human Writing:** human writing is simulated by using italic typeface for syntax groups (comments, methods, titles and more ...) that are generally named and **written in human language**.
+- **Human Writing:** human writing is simulated by using italic typeface for syntax groups (comments, methods, stucts, and more ...) that are generally named and **written in human language**.
 - **Minimal Syntax:** only three colors are used to highlight syntax, following the **color guidelines for web design**, which state that **only three main colors** should be used in interfaces, no more.
 - **Signal Alerts:** the yellow, orange and red colors are reserved to be used only with important alerts, following the standards for the meanings of the **signal colors in the industrial area**.
 - **Styles:** choose the style that best suits your **personality**:

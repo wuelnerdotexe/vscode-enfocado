@@ -582,7 +582,7 @@
       "name": "supports.classes",
       "scope": ["support.class"],
       "settings": {
-        "fontStyle": "bold",
+        "fontStyle": "italic bold",
         "foreground": "#ff81ca"
       }
     },
@@ -590,6 +590,7 @@
       "name": "supports.functions",
       "scope": ["support.function"],
       "settings": {
+        "fontStyle": "italic",
         "foreground": "#ff81ca"
       }
     },
