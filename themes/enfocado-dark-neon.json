@@ -1,6 +1,6 @@
 {
   "$schema": "vscode://schemas/color-theme",
-  "name": "Enfocado Neon",
+  "name": "Enfocado Dark Neon",
   "type": "dark",
   "colors": {
     "foreground": "#b9b9b9",

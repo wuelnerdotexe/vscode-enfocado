@@ -1,6 +1,6 @@
 {
   "$schema": "vscode://schemas/color-theme",
-  "name": "Enfocado Nature",
+  "name": "Enfocado Light Nature",
   "type": "light",
   "colors": {
     "foreground": "#474747",
