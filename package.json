@@ -1,7 +1,7 @@
 {
   "name": "vscode-enfocado",
   "displayName": "Enfocado",
-  "version": "1.5.1",
+  "version": "1.6.0",
   "publisher": "wuelnerdotexe",
   "description": "How themes should be.",
   "author": {
@@ -15,14 +15,24 @@
   "contributes": {
     "themes": [
       {
-        "label": "Enfocado Nature",
-        "uiTheme": "vs-dark",
-        "path": "./themes/enfocado-nature.json"
+        "label": "Enfocado Light Nature",
+        "uiTheme": "vs",
+        "path": "./themes/enfocado-light-nature.json"
       },
       {
-        "label": "Enfocado Neon",
+        "label": "Enfocado Light Neon",
+        "uiTheme": "vs",
+        "path": "./themes/enfocado-light-neon.json"
+      },
+      {
+        "label": "Enfocado Dark Nature",
         "uiTheme": "vs-dark",
-        "path": "./themes/enfocado-neon.json"
+        "path": "./themes/enfocado-dark-nature.json"
+      },
+      {
+        "label": "Enfocado Dark Neon",
+        "uiTheme": "vs-dark",
+        "path": "./themes/enfocado-dark-neon.json"
       }
     ]
   },
