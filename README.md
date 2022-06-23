@@ -16,12 +16,14 @@ What you **won't have** if you **don't install Enfocado**:
 - **Styles:** choose the style that best suits your **personality**:
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/wuelnerdotexe/enfocado/main/assets/vscode-nature.png">
+  <img src="https://raw.githubusercontent.com/wuelnerdotexe/enfocado/main/assets/vscode-light-nature.png">
+  <img src="https://raw.githubusercontent.com/wuelnerdotexe/enfocado/main/assets/vscode-dark-nature.png">
   <strong>Nature:</strong> go for the <code>nature</code> style if you are a minimalist developer who is always <strong>connected to nature</strong>.
 </div>
 <br />
 <div align="center">
-  <img src="https://raw.githubusercontent.com/wuelnerdotexe/enfocado/main/assets/vscode-neon.png">
+  <img src="https://raw.githubusercontent.com/wuelnerdotexe/enfocado/main/assets/vscode-light-neon.png">
+  <img src="https://raw.githubusercontent.com/wuelnerdotexe/enfocado/main/assets/vscode-dark-neon.png">
   <strong>Neon:</strong> go for the <code>neon</code> style if you are an outgoing developer that is always <strong>surrounded by RGBs</strong>.
 </div>
 
