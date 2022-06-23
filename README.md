@@ -39,9 +39,33 @@ What you **won't have** if you **don't install Enfocado**:
 
 ## Recommendations
 
+### Settings
+
+For the best **Enfocado** experience, I recommend adding this setting to the end of your VS Code `settings.json` file:
+
+```json
+// Enfocado indistractable setup.
+"breadcrumbs.enabled": false,
+"editor.bracketPairColorization.enabled": true,
+"editor.cursorSmoothCaretAnimation": true,
+"editor.cursorBlinking": "phase",
+"editor.guides.bracketPairs": true,
+"editor.guides.indentation": true,
+"editor.minimap.enabled": false,
+"editor.renderWhitespace": "none",
+"editor.smoothScrolling": true,
+"explorer.decorations.colors": false,
+"terminal.integrated.cursorBlinking": false,
+"window.menuBarVisibility": "toggle", // "toggle" or "compact".
+"workbench.editor.showIcons": false,
+"workbench.editor.tabSizing": "shrink",
+"workbench.iconTheme": null,
+"workbench.list.smoothScrolling": true
+```
+
 ### Fonts
 
-In order for the human text simulation to work as it should, I recommend that you use either of these three beautiful fonts, which align with the **"Mankind and Machine"** concept.
+In order for the **Human Writing** simulation to work as it should, I recommend that you use either of these three beautiful fonts, which align with the **"Mankind and Machine"** concept.
 
 - [IBM Plex Mono](https://www.ibm.com/plex/).
 - [Victor Mono](https://rubjo.github.io/victor-mono/).
