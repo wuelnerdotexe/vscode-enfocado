@@ -411,7 +411,7 @@
     {
       "scope": ["markup.heading"],
       "settings": {
-        "fontStyle": "bold",
+        "fontStyle": "",
         "foreground": "#282828"
       }
     },
@@ -442,7 +442,7 @@
     {
       "scope": ["markup.quote"],
       "settings": {
-        "fontStyle": "italic",
+        "fontStyle": "",
         "foreground": "#474747"
       }
     },

@@ -41,7 +41,7 @@ What you **won't have** if you **don't install Enfocado**:
 
 ### Settings
 
-For the best **Enfocado** experience, I recommend adding this setting to the end of your VS Code `settings.json` file:
+For the best **Enfocado** experience, I recommend adding this setting to your VS Code `settings.json` file:
 
 ```json
 // Enfocado indistractable setup.
@@ -52,7 +52,7 @@ For the best **Enfocado** experience, I recommend adding this setting to the end
 "editor.guides.bracketPairs": true,
 "editor.guides.indentation": true,
 "editor.minimap.enabled": false,
-"editor.renderWhitespace": "all",
+"editor.renderWhitespace": "trailing",
 "editor.smoothScrolling": true,
 "explorer.decorations.colors": false,
 "terminal.integrated.cursorBlinking": false,
