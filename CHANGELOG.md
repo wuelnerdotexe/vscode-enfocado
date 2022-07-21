@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.8.0] - 2022-07-21
+
+### Added
+
+- Multiple improvements have been made to Semantic Highlight.
+
+The following tokens are now highlighted in dimmed orange to give a message of caution:
+- Readonly & constant variables,
+- Readonly properties, and
+- Exceptions (try - catch).
+
 ## [1.7.3] - 2022-07-11
 
 ### Fixed

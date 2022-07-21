@@ -53,6 +53,7 @@ For the best **Enfocado** experience, I recommend adding this setting to your VS
 "editor.guides.indentation": true,
 "editor.minimap.enabled": false,
 "editor.renderWhitespace": "trailing",
+"editor.semanticHighlighting.enabled": "configuredByTheme",
 "editor.smoothScrolling": true,
 "explorer.decorations.colors": false,
 "terminal.integrated.cursorBlinking": false,
