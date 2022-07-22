@@ -181,7 +181,7 @@
     "widget.shadow": "#ebebeb",
     "editorWidget.foreground": "#474747",
     "editorWidget.background": "#ebebeb",
-    "editorWidget.resizeBorder": "#878787",
+    "editorWidget.resizeBorder": "#c7008b",
     "pickerGroup.border": "#ffffff",
     "pickerGroup.foreground": "#dd0f9d",
     "debugToolBar.background": "#ebebeb",
@@ -298,12 +298,12 @@
     "*.declaration": { "fontStyle": "bold", "foreground": "#6b40c3" },
     "*.defaultLibrary": { "fontStyle": "", "foreground": "#1d9700" },
     "*.deprecated": {
-      "fontStyle": "bold strikethrough",
+      "fontStyle": "bold",
       "foreground": "#bf0000"
     },
     "*.documentation": { "fontStyle": "", "foreground": "#1d9700" },
     "*.modification": { "fontStyle": "", "foreground": "#dd0f9d" },
-    "*.readonly": { "fontStyle": "", "foreground": "#d04a00" },
+    "*.readonly": { "fontStyle": "", "foreground": "#c49700" },
     "*.static": { "fontStyle": "", "foreground": "#dd0f9d" },
     "type.defaultLibrary": { "fontStyle": "bold", "foreground": "#0054cf" },
     "class.defaultLibrary": { "fontStyle": "bold", "foreground": "#0054cf" },
@@ -311,12 +311,12 @@
       "fontStyle": "italic",
       "foreground": "#008400"
     },
-    "variable.readonly": { "fontStyle": "", "foreground": "#d04a00" },
+    "variable.readonly": { "fontStyle": "", "foreground": "#c49700" },
     "variable.readonly.defaultLibrary": {
       "fontStyle": "",
-      "foreground": "#d04a00"
+      "foreground": "#c49700"
     },
-    "property.readonly": { "fontStyle": "", "foreground": "#d04a00" }
+    "property.readonly": { "fontStyle": "", "foreground": "#c49700" }
   },
   "tokenColors": [
     {
@@ -370,7 +370,7 @@
       "name": "invalids",
       "scope": ["invalid", "invalid.deprecated", "invalid.illegal"],
       "settings": {
-        "fontStyle": "bold strikethrough",
+        "fontStyle": "bold",
         "foreground": "#bf0000"
       }
     },
@@ -661,8 +661,8 @@
       "name": "types.readonly",
       "scope": ["variable.other.constant.property"],
       "settings": {
-        "fontStyle": "",
-        "foreground": "#d04a00"
+        "fontStyle": "bold",
+        "foreground": "#c49700"
       }
     },
     {
@@ -678,7 +678,7 @@
       "scope": ["variable.other.constant"],
       "settings": {
         "fontStyle": "",
-        "foreground": "#d04a00"
+        "foreground": "#c49700"
       }
     }
   ]

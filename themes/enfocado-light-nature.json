@@ -181,7 +181,7 @@
     "widget.shadow": "#ebebeb",
     "editorWidget.foreground": "#474747",
     "editorWidget.background": "#ebebeb",
-    "editorWidget.resizeBorder": "#878787",
+    "editorWidget.resizeBorder": "#008400",
     "pickerGroup.border": "#ffffff",
     "pickerGroup.foreground": "#1d9700",
     "debugToolBar.background": "#ebebeb",
@@ -298,12 +298,12 @@
     "*.declaration": { "fontStyle": "bold", "foreground": "#0054cf" },
     "*.defaultLibrary": { "fontStyle": "", "foreground": "#dd0f9d" },
     "*.deprecated": {
-      "fontStyle": "bold strikethrough",
+      "fontStyle": "bold",
       "foreground": "#bf0000"
     },
     "*.documentation": { "fontStyle": "", "foreground": "#dd0f9d" },
     "*.modification": { "fontStyle": "", "foreground": "#1d9700" },
-    "*.readonly": { "fontStyle": "", "foreground": "#d04a00" },
+    "*.readonly": { "fontStyle": "", "foreground": "#c49700" },
     "*.static": { "fontStyle": "", "foreground": "#1d9700" },
     "type.defaultLibrary": { "fontStyle": "bold", "foreground": "#6b40c3" },
     "class.defaultLibrary": { "fontStyle": "bold", "foreground": "#6b40c3" },
@@ -311,12 +311,12 @@
       "fontStyle": "italic",
       "foreground": "#c7008b"
     },
-    "variable.readonly": { "fontStyle": "", "foreground": "#d04a00" },
+    "variable.readonly": { "fontStyle": "", "foreground": "#c49700" },
     "variable.readonly.defaultLibrary": {
       "fontStyle": "",
-      "foreground": "#d04a00"
+      "foreground": "#c49700"
     },
-    "property.readonly": { "fontStyle": "", "foreground": "#d04a00" }
+    "property.readonly": { "fontStyle": "", "foreground": "#c49700" }
   },
   "tokenColors": [
     {
@@ -370,7 +370,7 @@
       "name": "invalids",
       "scope": ["invalid", "invalid.deprecated", "invalid.illegal"],
       "settings": {
-        "fontStyle": "bold strikethrough",
+        "fontStyle": "bold",
         "foreground": "#bf0000"
       }
     },
