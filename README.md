@@ -43,25 +43,52 @@ What you **won't have** if you **don't install Enfocado**:
 
 For the best **Enfocado** experience, I recommend adding this setting to your VS Code `settings.json` file:
 
-```json
-// Enfocado indistractable setup.
-"breadcrumbs.enabled": false,
-"editor.bracketPairColorization.enabled": true,
-"editor.cursorSmoothCaretAnimation": true,
-"editor.cursorBlinking": "smooth",
-"editor.guides.bracketPairs": true,
-"editor.guides.indentation": true,
-"editor.minimap.enabled": false,
-"editor.renderWhitespace": "trailing",
-"editor.semanticHighlighting.enabled": "configuredByTheme",
-"editor.smoothScrolling": true,
-"explorer.decorations.colors": false,
-"terminal.integrated.cursorBlinking": false,
+```jsonc
+// ENFOCADO INDISTRACTABLE SETUP: {{{
+
+// Clean the editor of useless stuff.
 "window.menuBarVisibility": "compact",
+"breadcrumbs.enabled": false,
+"editor.minimap.enabled": false,
+
+// Disable unseless icons.
+"workbench.iconTheme": null,
 "workbench.editor.showIcons": false,
 "workbench.editor.tabSizing": "shrink",
-"workbench.iconTheme": null,
-"workbench.list.smoothScrolling": true
+
+// *Disable explorer and tabs colors in filenames. 
+"explorer.decorations.colors": false,
+"workbench.editor.decorations.colors": false,
+
+// *Enable explorer and tabs colors in filename's badges.
+"explorer.decorations.badges": true,
+"workbench.editor.decorations.badges": true,
+
+// *Enable semantic highlighting syntax.
+"editor.semanticHighlighting.enabled": true,
+
+// Enable bracket pair colorization.
+"editor.bracketPairColorization.enabled": true,
+
+// Enable indent lines with colorization pairs.
+"editor.guides.indentation": true,
+"editor.guides.bracketPairs": true,
+
+// Show only trailing whitespaces.
+"editor.renderWhitespace": "trailing",
+
+// Sexy font customizations for sexy developers ;).
+"editor.fontFamily": "'Victor Mono', 'IBM Plex Mono'",
+"editor.fontSize": 18,
+"editor.fontWeight": "500",
+"editor.fontLigatures": true,
+
+// Lastly and most importantly, enable Enfocado theme and enjoy coding.
+"workbench.preferredDarkColorTheme": "Enfocado Dark {Nature or Neon}",
+"workbench.preferredLightColorTheme": "Enfocado Light {Nature or Neon}",
+"workbench.colorTheme": "Enfocado {Light or Dark} {Nature or Neon}",
+
+// }}} NOTE: groups marked with an '*' are highly required.
 ```
 
 ### Fonts
