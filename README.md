@@ -88,6 +88,15 @@ Let me see your captures and let me know what you think with the hashtag **#HowT
 
 And of course, if you want to motivate me to constantly improve this theme, your donations are welcome at [PayPal](https://paypal.me/wuelnerdotexe). 👉👈
 
+## Extensions
+
+The following extensions are supported:
+
+- [Babel JavaScript](https://marketplace.visualstudio.com/items?itemName=mgmcdermott.vscode-language-babel)
+- [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
+- [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
+- [PostCSS Language Support](https://marketplace.visualstudio.com/items?itemName=csstools.postcss)
+
 ## Credits
 
 - Theme colorscheme by [Jan Warchol](https://github.com/jan-warchol) on [Github](https://github.com/jan-warchol/selenized/blob/master/the-values.md).

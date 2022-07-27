@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.9.0] - 2022-07-27
+
+### Added
+
+- Visibility of files in use in explorer and tabs is improved.
+
+Support for the following extensions is added:
+
+- [Babel JavaScript](https://marketplace.visualstudio.com/items?itemName=mgmcdermott.vscode-language-babel)
+- [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
+- [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
+- [PostCSS Language Support](https://marketplace.visualstudio.com/items?itemName=csstools.postcss)
+
 ## [1.8.1] - 2022-07-22
 
 ### Changed
