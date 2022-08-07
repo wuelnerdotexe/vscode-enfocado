@@ -48,8 +48,9 @@ For the best **Enfocado** experience, I recommend adding this setting to your VS
 
 // Clean the editor of useless stuff.
 "window.menuBarVisibility": "compact",
-"breadcrumbs.enabled": false,
+"editor.renderLineHighlight": "none",
 "editor.minimap.enabled": false,
+"breadcrumbs.enabled": false,
 
 // Disable unseless icons.
 "workbench.iconTheme": null,
@@ -82,6 +83,7 @@ For the best **Enfocado** experience, I recommend adding this setting to your VS
 "editor.fontSize": 18,
 "editor.fontWeight": "500",
 "editor.fontLigatures": true,
+"editor.lineHeight": 1.8,
 
 // Lastly and most importantly, enable Enfocado theme and enjoy coding.
 "workbench.preferredDarkColorTheme": "Enfocado Dark {Nature or Neon}",
@@ -105,7 +107,7 @@ In order for the **Human Writing** simulation to work as it should, I recommend 
 
 ## Maintainer
 
-> Hola 👋, soy **[Wuelner](https://linktr.ee/wuelnerdotexe)**, un **software developer de Guatemala**, apasionado por crear soluciones minimalistas utilizando fundamentos sólidos enfocados en **"cómo deben ser las cosas"**.
+> Hi 👋, I'm **[Wuelner](https://linktr.ee/wuelnerdotexe)**, a **software developer from Guatemala**, passionate about creating minimalist solutions using solid fundamentals focused on **"how things should be"**.
 
 ## Contributing
 
@@ -134,4 +136,4 @@ The following extensions are supported:
 
 [MIT &copy; Wuelner Martínez.](https://github.com/wuelnerdotexe/vscode-enfocado/blob/main/LICENSE)
 
-<p align="center">¡Con 💖 de <strong>Latinoamérica</strong> para el mundo!</p>
+<p align="center">¡Con 💖 de <strong>LATAM</strong> para el mundo!</p>
