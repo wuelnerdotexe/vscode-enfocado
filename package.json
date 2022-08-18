@@ -1,13 +1,16 @@
 {
   "name": "vscode-enfocado",
   "displayName": "Enfocado",
-  "version": "1.9.3",
+  "version": "2.0.0",
   "publisher": "wuelnerdotexe",
   "description": "How themes should be.",
   "author": {
     "name": "Wuelner Martínez",
     "email": "wuelner.martinez@outlook.com",
     "url": "https://wuelnerdotexe.github.io"
+  },
+  "sponsor": {
+    "url": "https://paypal.me/wuelnerdotexe"
   },
   "categories": [
     "Themes"
@@ -17,26 +20,26 @@
       {
         "label": "Enfocado Light Nature",
         "uiTheme": "vs",
-        "path": "./themes/enfocado-light-nature.json"
+        "path": "./src/themes/enfocado-light-nature.json"
       },
       {
         "label": "Enfocado Light Neon",
         "uiTheme": "vs",
-        "path": "./themes/enfocado-light-neon.json"
+        "path": "./src/themes/enfocado-light-neon.json"
       },
       {
         "label": "Enfocado Dark Nature",
         "uiTheme": "vs-dark",
-        "path": "./themes/enfocado-dark-nature.json"
+        "path": "./src/themes/enfocado-dark-nature.json"
       },
       {
         "label": "Enfocado Dark Neon",
         "uiTheme": "vs-dark",
-        "path": "./themes/enfocado-dark-neon.json"
+        "path": "./src/themes/enfocado-dark-neon.json"
       }
     ]
   },
-  "icon": "icon.png",
+  "icon": "src/assets/icon.png",
   "galleryBanner": {
     "color": "#181818",
     "theme": "dark"
@@ -58,5 +61,21 @@
     "enfocado",
     "vim-enfocado",
     "vscode-enfocado"
-  ]
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "2.7.1",
+    "vsce": "^2.10.0"
+  },
+  "scripts": {
+    "build": "mkdir -p ./dist/ && vsce package -o ./dist/vscode-enfocado.vsix",
+    "deploy": "vsce publish",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
 }

@@ -1,0 +1,8 @@
+{
+  "prettier.enable": true,
+  "prettier.requireConfig": true,
+  "prettier.useEditorConfig": false,
+  "prettier.configPath": "./prettier.config.js",
+  "prettier.ignorePath": "./.prettierignore",
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}

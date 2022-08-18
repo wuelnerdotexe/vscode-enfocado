@@ -4,6 +4,32 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.0] - 2022-08-18
+
+### Added
+
+- Added a table in the documentation to expose and understand syntax colors.
+- Added support for colorize all symbol icons.
+- More error, warning and info alerts are colored with the **Enfocado** philosophy.
+- Inputs, dropdowns and check buttons now have their own philosophy.
+- The colors of the settings and the welcome screen are redesigned.
+- The colors of the overview rule are customized.
+- Many color adjustments are made to improve the experience.
+- Massive improvements are madded.
+- Finally, a button is added in the VS Marketplace to sponsor this project. If you do, thank you very much in advance! 💖
+
+### Changed.
+
+- More options are added to the indistractable setup, and those that are very personal are eliminated.
+- The colors of the bracket indent guides are now more focused.
+
+### Fixed.
+
+- Fixed scrollbar color, now you can see its position.
+- Fixed peek editor background color.
+
+**DEV NOTES**: the project is restructured and dev dependencies are added.
+
 ## [1.9.3] - 2022-08-06
 
 ### Fixed
@@ -51,6 +77,7 @@ Support for the following extensions is added:
 - Multiple improvements have been made to Semantic Highlight.
 
 The following tokens are now highlighted in dimmed orange to give a message of caution:
+
 - Readonly & constant variables,
 - Readonly properties, and
 - Exceptions (try - catch).
@@ -181,4 +208,4 @@ The following tokens are now highlighted in dimmed orange to give a message of c
 
 - Initial release
 
-<p align="center">¡Con 💖 de <strong>LATAM</strong> para el mundo!</p>
+<p align="center">¡With 💖 from <strong>LATAM</strong> to the world!</p>

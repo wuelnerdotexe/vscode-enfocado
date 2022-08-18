@@ -1,3 +1,11 @@
+.github/**
+.husky/**
 .vscode/**
 .vscode-test/**
+node_modules
+test
+.gitattributes
 .gitignore
+.prettierignore
+commitlint.config.js
+prettier.config.js
