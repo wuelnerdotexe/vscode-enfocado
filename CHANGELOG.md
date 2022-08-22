@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.1] - 2022-08-21
+
+### Fixed
+
+- The color of the beginning of the comments is corrected.
+- The priority of the Text Mate scopes is optimized.
+- Semantic highlighting is optimized.
+
 ## [2.0.0] - 2022-08-18
 
 ### Added
@@ -28,7 +36,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Fixed scrollbar color, now you can see its position.
 - Fixed peek editor background color.
 
-**DEV NOTES**: the project is restructured and dev dependencies are added.
+DEV NOTES: the project is restructured and dev dependencies are added.
 
 ## [1.9.3] - 2022-08-06
 

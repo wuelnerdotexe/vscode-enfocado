@@ -3,7 +3,7 @@
 .vscode/**
 .vscode-test/**
 node_modules
-test
+tests
 .gitattributes
 .gitignore
 .prettierignore

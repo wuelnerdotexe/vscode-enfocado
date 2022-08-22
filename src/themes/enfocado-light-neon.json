@@ -579,23 +579,13 @@
       "name": "errors",
       "scope": "invalid",
       "settings": {
-        "fontStyle": "bold",
         "foreground": "#bf0000"
-      }
-    },
-    // Exceptions.
-    {
-      "name": "exceptions",
-      "scope": "keyword.control.trycatch",
-      "settings": {
-        "fontStyle": "",
-        "foreground": "#d04a00"
       }
     },
     // Headers.
     {
-      "name": "sections",
-      "scope": ["entity.name", "entity.name.section"],
+      "name": "headers",
+      "scope": "entity.name",
       "settings": {
         "fontStyle": "bold",
         "foreground": "#c7008b"
@@ -722,7 +712,8 @@
         "constant",
         "entity.name.namespace",
         "meta",
-        "punctuation",
+        "punctuation.separator",
+        "punctuation.terminator",
         "string.unquoted"
       ],
       "settings": {
@@ -799,6 +790,24 @@
         "fontStyle": "bold"
       }
     },
+    // Titles.
+    {
+      "name": "titles",
+      "scope": "entity.name.section",
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#c7008b"
+      }
+    },
+    // Trycatch.
+    {
+      "name": "trycatch",
+      "scope": "keyword.control.trycatch",
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#d04a00"
+      }
+    },
     // Types.
     {
       "name": "types",
@@ -825,7 +834,7 @@
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#af8500"
+        "foreground": "#c49700"
       }
     },
     {
@@ -842,6 +851,8 @@
   SECTION: Semantic highlight.
   ==========================================================================
   */
+  // Enable semantic highlight.
+  "semanticHighlighting": true,
   // Token colors.
   "semanticTokenColors": {
     // Standard token types.
@@ -866,456 +877,272 @@
     "string": { "fontStyle": "", "foreground": "#00ad9c" },
     "struct": { "fontStyle": "bold", "foreground": "#6b40c3" },
     "type": { "fontStyle": "bold", "foreground": "#6b40c3" },
-    "typeParameter": {
-      "fontStyle": "bold",
-      "foreground": "#6b40c3"
-    },
+    "typeParameter": { "fontStyle": "bold", "foreground": "#6b40c3" },
     "variable": { "fontStyle": "", "foreground": "#dd0f9d" },
-    // Standard token modifiers.
-    "*.abstract": { "fontStyle": "bold", "foreground": "#6b40c3" },
-    "*.async": { "fontStyle": "", "foreground": "#7f51d6" },
-    "*.modification": { "fontStyle": "", "foreground": "#dd0f9d" },
-    "*.static": { "fontStyle": "", "foreground": "#dd0f9d" },
-    // Declarations.
-    "*.declaration": { "fontStyle": "", "foreground": "#dd0f9d" },
-    "type.declaration": {
-      "fontStyle": "bold",
-      "foreground": "#6b40c3"
-    },
+    // Declarations modifier.
+    "class.declaration": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "comment.declaration": { "fontStyle": "italic", "foreground": "#878787" },
+    "decorator.declaration": { "fontStyle": "", "foreground": "#0064e4" },
+    "enum.declaration": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "enumMember.declaration": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "event.declaration": { "fontStyle": "italic", "foreground": "#008400" },
+    "function.declaration": { "fontStyle": "italic", "foreground": "#c7008b" },
+    "interface.declaration": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "keyword.declaration": { "fontStyle": "", "foreground": "#7f51d6" },
+    "label.declaration": { "fontStyle": "", "foreground": "#7f51d6" },
+    "macro.declaration": { "fontStyle": "", "foreground": "#7f51d6" },
+    "method.declaration": { "fontStyle": "italic", "foreground": "#c7008b" },
+    "namespace.declaration": { "fontStyle": "", "foreground": "#474747" },
+    "number.declaration": { "fontStyle": "", "foreground": "#474747" },
+    "operator.declaration": { "fontStyle": "", "foreground": "#7f51d6" },
+    "parameter.declaration": { "fontStyle": "", "foreground": "#dd0f9d" },
+    "property.declaration": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "regexp.declaration": { "fontStyle": "", "foreground": "#0064e4" },
+    "string.declaration": { "fontStyle": "", "foreground": "#00ad9c" },
+    "struct.declaration": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "type.declaration": { "fontStyle": "bold", "foreground": "#6b40c3" },
     "typeParameter.declaration": {
       "fontStyle": "bold",
       "foreground": "#6b40c3"
     },
-    "struct.declaration": {
-      "fontStyle": "bold",
-      "foreground": "#6b40c3"
-    },
-    "class.declaration": {
-      "fontStyle": "bold",
-      "foreground": "#6b40c3"
-    },
-    "interface.declaration": {
-      "fontStyle": "bold",
-      "foreground": "#6b40c3"
-    },
-    "enum.declaration": {
-      "fontStyle": "bold",
-      "foreground": "#6b40c3"
-    },
-    "enumMember.declaration": {
-      "fontStyle": "bold",
-      "foreground": "#6b40c3"
-    },
-    "property.declaration": {
-      "fontStyle": "bold",
-      "foreground": "#6b40c3"
-    },
-    "method.declaration": {
-      "fontStyle": "italic",
-      "foreground": "#c7008b"
-    },
-    "function.declaration": {
-      "fontStyle": "italic",
-      "foreground": "#c7008b"
-    },
-    "event.declaration": {
-      "fontStyle": "italic",
-      "foreground": "#008400"
-    },
-    // Definitions.
-    "*.definition": { "fontStyle": "", "foreground": "#dd0f9d" },
-    "type.definition": {
-      "fontStyle": "bold",
-      "foreground": "#6b40c3"
-    },
+    "variable.declaration": { "fontStyle": "", "foreground": "#dd0f9d" },
+    // Definitions modifier.
+    "class.definition": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "comment.definition": { "fontStyle": "italic", "foreground": "#878787" },
+    "decorator.definition": { "fontStyle": "", "foreground": "#0064e4" },
+    "enum.definition": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "enumMember.definition": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "event.definition": { "fontStyle": "italic", "foreground": "#008400" },
+    "function.definition": { "fontStyle": "italic", "foreground": "#c7008b" },
+    "interface.definition": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "keyword.definition": { "fontStyle": "", "foreground": "#7f51d6" },
+    "label.definition": { "fontStyle": "", "foreground": "#7f51d6" },
+    "macro.definition": { "fontStyle": "", "foreground": "#7f51d6" },
+    "method.definition": { "fontStyle": "italic", "foreground": "#c7008b" },
+    "namespace.definition": { "fontStyle": "", "foreground": "#474747" },
+    "number.definition": { "fontStyle": "", "foreground": "#474747" },
+    "operator.definition": { "fontStyle": "", "foreground": "#7f51d6" },
+    "parameter.definition": { "fontStyle": "", "foreground": "#dd0f9d" },
+    "property.definition": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "regexp.definition": { "fontStyle": "", "foreground": "#0064e4" },
+    "string.definition": { "fontStyle": "", "foreground": "#00ad9c" },
+    "struct.definition": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "type.definition": { "fontStyle": "bold", "foreground": "#6b40c3" },
     "typeParameter.definition": {
       "fontStyle": "bold",
       "foreground": "#6b40c3"
     },
-    "struct.definition": {
+    "variable.definition": { "fontStyle": "", "foreground": "#dd0f9d" },
+    // Documentation modifier.
+    "class.documentation": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "comment.documentation": { "fontStyle": "italic", "foreground": "#878787" },
+    "decorator.documentation": { "fontStyle": "", "foreground": "#0064e4" },
+    "enum.documentation": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "enumMember.documentation": {
       "fontStyle": "bold",
       "foreground": "#6b40c3"
     },
-    "class.definition": {
-      "fontStyle": "bold",
-      "foreground": "#6b40c3"
-    },
-    "interface.definition": {
-      "fontStyle": "bold",
-      "foreground": "#6b40c3"
-    },
-    "enum.definition": {
-      "fontStyle": "bold",
-      "foreground": "#6b40c3"
-    },
-    "enumMember.definition": {
-      "fontStyle": "bold",
-      "foreground": "#6b40c3"
-    },
-    "property.definition": {
-      "fontStyle": "bold",
-      "foreground": "#6b40c3"
-    },
-    "method.definition": {
+    "event.documentation": { "fontStyle": "italic", "foreground": "#008400" },
+    "function.documentation": {
       "fontStyle": "italic",
       "foreground": "#c7008b"
     },
-    "function.definition": {
-      "fontStyle": "italic",
-      "foreground": "#c7008b"
+    "interface.documentation": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "keyword.documentation": { "fontStyle": "", "foreground": "#7f51d6" },
+    "label.documentation": { "fontStyle": "", "foreground": "#7f51d6" },
+    "macro.documentation": { "fontStyle": "", "foreground": "#7f51d6" },
+    "method.documentation": { "fontStyle": "italic", "foreground": "#c7008b" },
+    "namespace.documentation": { "fontStyle": "", "foreground": "#474747" },
+    "number.documentation": { "fontStyle": "", "foreground": "#474747" },
+    "operator.documentation": { "fontStyle": "", "foreground": "#7f51d6" },
+    "parameter.documentation": { "fontStyle": "", "foreground": "#dd0f9d" },
+    "property.documentation": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "regexp.documentation": { "fontStyle": "", "foreground": "#0064e4" },
+    "string.documentation": { "fontStyle": "", "foreground": "#00ad9c" },
+    "struct.documentation": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "type.documentation": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "typeParameter.documentation": {
+      "fontStyle": "bold",
+      "foreground": "#6b40c3"
     },
-    "event.definition": {
+    "variable.documentation": { "fontStyle": "", "foreground": "#dd0f9d" },
+    // Local modifier.
+    "class.local": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "comment.local": { "fontStyle": "italic", "foreground": "#878787" },
+    "decorator.local": { "fontStyle": "", "foreground": "#0064e4" },
+    "enum.local": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "enumMember.local": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "event.local": { "fontStyle": "italic", "foreground": "#008400" },
+    "function.local": { "fontStyle": "italic", "foreground": "#c7008b" },
+    "interface.local": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "keyword.local": { "fontStyle": "", "foreground": "#7f51d6" },
+    "label.local": { "fontStyle": "", "foreground": "#7f51d6" },
+    "macro.local": { "fontStyle": "", "foreground": "#7f51d6" },
+    "method.local": { "fontStyle": "italic", "foreground": "#c7008b" },
+    "namespace.local": { "fontStyle": "", "foreground": "#474747" },
+    "number.local": { "fontStyle": "", "foreground": "#474747" },
+    "operator.local": { "fontStyle": "", "foreground": "#7f51d6" },
+    "parameter.local": { "fontStyle": "", "foreground": "#dd0f9d" },
+    "property.local": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "regexp.local": { "fontStyle": "", "foreground": "#0064e4" },
+    "string.local": { "fontStyle": "", "foreground": "#00ad9c" },
+    "struct.local": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "type.local": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "typeParameter.local": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "variable.local": { "fontStyle": "", "foreground": "#dd0f9d" },
+    // Modification modifier.
+    "class.modification": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "comment.modification": { "fontStyle": "italic", "foreground": "#878787" },
+    "decorator.modification": { "fontStyle": "", "foreground": "#0064e4" },
+    "enum.modification": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "enumMember.modification": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "event.modification": { "fontStyle": "italic", "foreground": "#008400" },
+    "function.modification": { "fontStyle": "italic", "foreground": "#c7008b" },
+    "interface.modification": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "keyword.modification": { "fontStyle": "", "foreground": "#7f51d6" },
+    "label.modification": { "fontStyle": "", "foreground": "#7f51d6" },
+    "macro.modification": { "fontStyle": "", "foreground": "#7f51d6" },
+    "method.modification": { "fontStyle": "italic", "foreground": "#c7008b" },
+    "namespace.modification": { "fontStyle": "", "foreground": "#474747" },
+    "number.modification": { "fontStyle": "", "foreground": "#474747" },
+    "operator.modification": { "fontStyle": "", "foreground": "#7f51d6" },
+    "parameter.modification": { "fontStyle": "", "foreground": "#dd0f9d" },
+    "property.modification": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "regexp.modification": { "fontStyle": "", "foreground": "#0064e4" },
+    "string.modification": { "fontStyle": "", "foreground": "#00ad9c" },
+    "struct.modification": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "type.modification": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "typeParameter.modification": {
+      "fontStyle": "bold",
+      "foreground": "#6b40c3"
+    },
+    "variable.modification": { "fontStyle": "", "foreground": "#dd0f9d" },
+    // Static modifier.
+    "class.static": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "comment.static": { "fontStyle": "italic", "foreground": "#878787" },
+    "decorator.static": { "fontStyle": "", "foreground": "#0064e4" },
+    "enum.static": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "enumMember.static": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "event.static": { "fontStyle": "italic", "foreground": "#008400" },
+    "function.static": { "fontStyle": "italic", "foreground": "#c7008b" },
+    "interface.static": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "keyword.static": { "fontStyle": "", "foreground": "#7f51d6" },
+    "label.static": { "fontStyle": "", "foreground": "#7f51d6" },
+    "macro.static": { "fontStyle": "", "foreground": "#7f51d6" },
+    "method.static": { "fontStyle": "italic", "foreground": "#c7008b" },
+    "namespace.static": { "fontStyle": "", "foreground": "#474747" },
+    "number.static": { "fontStyle": "", "foreground": "#474747" },
+    "operator.static": { "fontStyle": "", "foreground": "#7f51d6" },
+    "parameter.static": { "fontStyle": "", "foreground": "#dd0f9d" },
+    "property.static": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "regexp.static": { "fontStyle": "", "foreground": "#0064e4" },
+    "string.static": { "fontStyle": "", "foreground": "#00ad9c" },
+    "struct.static": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "type.static": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "typeParameter.static": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "variable.static": { "fontStyle": "", "foreground": "#dd0f9d" },
+    // Default library modifier.
+    "class.defaultLibrary": { "fontStyle": "bold", "foreground": "#0054cf" },
+    "comment.defaultLibrary": {
+      "fontStyle": "italic",
+      "foreground": "#878787"
+    },
+    "decorator.defaultLibrary": { "fontStyle": "", "foreground": "#7f51d6" },
+    "enum.defaultLibrary": { "fontStyle": "bold", "foreground": "#0054cf" },
+    "enumMember.defaultLibrary": {
+      "fontStyle": "bold",
+      "foreground": "#0054cf"
+    },
+    "event.defaultLibrary": { "fontStyle": "italic", "foreground": "#c7008b" },
+    "function.defaultLibrary": {
       "fontStyle": "italic",
       "foreground": "#008400"
-    },
-    // Default Library.
-    "*.defaultLibrary": {
-      "fontStyle": "",
-      "foreground": "#1d9700"
-    },
-    "type.defaultLibrary": {
-      "fontStyle": "bold",
-      "foreground": "#0054cf"
-    },
-    "typeParameter.defaultLibrary": {
-      "fontStyle": "bold",
-      "foreground": "#0054cf"
-    },
-    "struct.defaultLibrary": {
-      "fontStyle": "bold",
-      "foreground": "#0054cf"
-    },
-    "class.defaultLibrary": {
-      "fontStyle": "bold",
-      "foreground": "#0054cf"
     },
     "interface.defaultLibrary": {
       "fontStyle": "bold",
       "foreground": "#0054cf"
     },
-    "enum.defaultLibrary": {
+    "keyword.defaultLibrary": { "fontStyle": "", "foreground": "#0064e4" },
+    "label.defaultLibrary": { "fontStyle": "", "foreground": "#0064e4" },
+    "macro.defaultLibrary": { "fontStyle": "", "foreground": "#0064e4" },
+    "method.defaultLibrary": { "fontStyle": "italic", "foreground": "#008400" },
+    "namespace.defaultLibrary": { "fontStyle": "", "foreground": "#474747" },
+    "number.defaultLibrary": { "fontStyle": "", "foreground": "#474747" },
+    "operator.defaultLibrary": { "fontStyle": "", "foreground": "#0064e4" },
+    "parameter.defaultLibrary": { "fontStyle": "", "foreground": "#1d9700" },
+    "property.defaultLibrary": { "fontStyle": "bold", "foreground": "#0054cf" },
+    "regexp.defaultLibrary": { "fontStyle": "", "foreground": "#7f51d6" },
+    "string.defaultLibrary": { "fontStyle": "", "foreground": "#00ad9c" },
+    "struct.defaultLibrary": { "fontStyle": "bold", "foreground": "#0054cf" },
+    "type.defaultLibrary": { "fontStyle": "bold", "foreground": "#0054cf" },
+    "typeParameter.defaultLibrary": {
       "fontStyle": "bold",
       "foreground": "#0054cf"
     },
-    "enumMember.defaultLibrary": {
-      "fontStyle": "bold",
-      "foreground": "#0054cf"
-    },
-    "property.defaultLibrary": {
-      "fontStyle": "bold",
-      "foreground": "#0054cf"
-    },
-    "method.defaultLibrary": {
-      "fontStyle": "italic",
-      "foreground": "#008400"
-    },
-    "function.defaultLibrary": {
-      "fontStyle": "italic",
-      "foreground": "#008400"
-    },
-    "event.defaultLibrary": {
-      "fontStyle": "italic",
-      "foreground": "#008400"
-    },
-    // Documentation.
-    "*.documentation": { "fontStyle": "", "foreground": "#1d9700" },
-    "type.documentation": {
-      "fontStyle": "bold",
-      "foreground": "#0054cf"
-    },
-    "typeParameter.documentation": {
-      "fontStyle": "bold",
-      "foreground": "#0054cf"
-    },
-    "struct.documentation": {
-      "fontStyle": "bold",
-      "foreground": "#0054cf"
-    },
-    "class.documentation": {
-      "fontStyle": "bold",
-      "foreground": "#0054cf"
-    },
-    "interface.documentation": {
-      "fontStyle": "bold",
-      "foreground": "#0054cf"
-    },
-    "enum.documentation": {
-      "fontStyle": "bold",
-      "foreground": "#0054cf"
-    },
-    "enumMember.documentation": {
-      "fontStyle": "bold",
-      "foreground": "#0054cf"
-    },
-    "property.documentation": {
-      "fontStyle": "bold",
-      "foreground": "#0054cf"
-    },
-    "method.documentation": {
-      "fontStyle": "italic",
-      "foreground": "#008400"
-    },
-    "function.documentation": {
-      "fontStyle": "italic",
-      "foreground": "#008400"
-    },
-    "event.documentation": {
-      "fontStyle": "italic",
-      "foreground": "#008400"
-    },
-    // Readonly.
-    "*.readonly": { "fontStyle": "", "foreground": "#c49700" },
-    "type.readonly": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "typeParameter.readonly": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "struct.readonly": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "class.readonly": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "interface.readonly": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "enum.readonly": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "enumMember.readonly": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "property.readonly": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "method.readonly": {
-      "fontStyle": "italic",
-      "foreground": "#af8500"
-    },
-    "function.readonly": {
-      "fontStyle": "italic",
-      "foreground": "#af8500"
-    },
-    "event.readonly": {
-      "fontStyle": "italic",
-      "foreground": "#af8500"
-    },
-    // Readonly definition.
-    "*.readonly.definition": {
-      "fontStyle": "",
-      "foreground": "#c49700"
-    },
-    "type.readonly.definition": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "typeParameter.readonly.definition": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "struct.readonly.definition": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "class.readonly.definition": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "interface.readonly.definition": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "enum.readonly.definition": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "enumMember.readonly.definition": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "property.readonly.definition": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "method.readonly.definition": {
-      "fontStyle": "italic",
-      "foreground": "#af8500"
-    },
-    "function.readonly.definition": {
-      "fontStyle": "italic",
-      "foreground": "#af8500"
-    },
-    "event.readonly.definition": {
-      "fontStyle": "italic",
-      "foreground": "#af8500"
-    },
-    // Readonly declaration.
-    "*.readonly.declaration": {
-      "fontStyle": "",
-      "foreground": "#c49700"
-    },
-    "type.readonly.declaration": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "typeParameter.readonly.declaration": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "struct.readonly.declaration": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "class.readonly.declaration": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "interface.readonly.declaration": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "enum.readonly.declaration": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "enumMember.readonly.declaration": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "property.readonly.declaration": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "method.readonly.declaration": {
-      "fontStyle": "italic",
-      "foreground": "#af8500"
-    },
-    "function.readonly.declaration": {
-      "fontStyle": "italic",
-      "foreground": "#af8500"
-    },
-    "event.readonly.declaration": {
-      "fontStyle": "italic",
-      "foreground": "#af8500"
-    },
-    // Readonly and Default Library.
-    "*.readonly.defaultLibrary": {
-      "fontStyle": "",
-      "foreground": "#c49700"
-    },
-    "variable.readonly.defaultLibrary": {
-      "fontStyle": "",
-      "foreground": "#c49700"
-    },
-    "type.readonly.defaultLibrary": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "typeParameter.readonly.defaultLibrary": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "struct.readonly.defaultLibrary": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "class.readonly.defaultLibrary": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "interface.readonly.defaultLibrary": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "enum.readonly.defaultLibrary": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "enumMember.readonly.defaultLibrary": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "property.readonly.defaultLibrary": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "method.readonly.defaultLibrary": {
-      "fontStyle": "italic",
-      "foreground": "#af8500"
-    },
-    "function.readonly.defaultLibrary": {
-      "fontStyle": "italic",
-      "foreground": "#af8500"
-    },
-    "event.readonly.defaultLibrary": {
-      "fontStyle": "italic",
-      "foreground": "#af8500"
-    },
-    // Readonly and Documentation.
-    "*.readonly.documentation": {
-      "fontStyle": "",
-      "foreground": "#c49700"
-    },
-    "variable.readonly.documentation": {
-      "fontStyle": "",
-      "foreground": "#c49700"
-    },
-    "type.readonly.documentation": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "typeParameter.readonly.documentation": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "struct.readonly.documentation": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "class.readonly.documentation": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "interface.readonly.documentation": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "enum.readonly.documentation": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "enumMember.readonly.documentation": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "property.readonly.documentation": {
-      "fontStyle": "bold",
-      "foreground": "#af8500"
-    },
-    "method.readonly.documentation": {
-      "fontStyle": "italic",
-      "foreground": "#af8500"
-    },
-    "function.readonly.documentation": {
-      "fontStyle": "italic",
-      "foreground": "#af8500"
-    },
-    "event.readonly.documentation": {
-      "fontStyle": "italic",
-      "foreground": "#af8500"
-    },
-    // Deprecated.
-    "*.deprecated": { "fontStyle": "bold", "foreground": "#bf0000" }
-  },
-  // Enable semantic highlight.
-  "semanticHighlighting": true
+    "variable.defaultLibrary": { "fontStyle": "", "foreground": "#1d9700" },
+    // Abstract modifier.
+    "*.abstract": "#c49700",
+    // Declaration abstract modifier.
+    "*.declaration.abstract": "#c49700",
+    // Definition abstract modifier.
+    "*.definition.abstract": "#c49700",
+    // Documentation abstract modifier.
+    "*.documentation.abstract": "#c49700",
+    // Local abstract modifier.
+    "*.local.abstract": "#c49700",
+    // Modification abstract modifier.
+    "*.modification.abstract": "#c49700",
+    // Static abstract modifier.
+    "*.static.abstract": "#c49700",
+    // Default library abstract modifier.
+    "*.defaultLibrary.abstract": "#c49700",
+    // Async modifier.
+    "*.async": "#c49700",
+    // Declaration async modifier.
+    "*.declaration.async": "#c49700",
+    // Definition async modifier.
+    "*.definition.async": "#c49700",
+    // Documentation async modifier.
+    "*.documentation.async": "#c49700",
+    // Local async modifier.
+    "*.local.async": "#c49700",
+    // Modification async modifier.
+    "*.modification.async": "#c49700",
+    // Static async modifier.
+    "*.static.async": "#c49700",
+    // Default library async modifier.
+    "*.defaultLibrary.async": "#c49700",
+    // Readonly modifier.
+    "*.readonly": "#c49700",
+    // Declaration readonly modifier.
+    "*.declaration.readonly": "#c49700",
+    // Definition readonly modifier.
+    "*.definition.readonly": "#c49700",
+    // Documentation readonly modifier.
+    "*.documentation.readonly": "#c49700",
+    // Local readonly modifier.
+    "*.local.readonly": "#c49700",
+    // Modification readonly modifier.
+    "*.modification.readonly": "#c49700",
+    // Static readonly modifier.
+    "*.static.readonly": "#c49700",
+    // Default library readonly modifier.
+    "*.defaultLibrary.readonly": "#c49700",
+    // Deprecated modifier.
+    "*.deprecated": "#bf0000",
+    // Declaration deprecated modifier.
+    "*.declaration.deprecated": "#bf0000",
+    // Definition deprecated modifier.
+    "*.definition.deprecated": "#bf0000",
+    // Documentation deprecated modifier.
+    "*.documentation.deprecated": "#bf0000",
+    // Local deprecated modifier.
+    "*.local.deprecated": "#bf0000",
+    // Modification deprecated modifier.
+    "*.modification.deprecated": "#bf0000",
+    // Static deprecated modifier.
+    "*.static.deprecated": "#bf0000",
+    // Default library deprecated modifier.
+    "*.defaultLibrary.deprecated": "#bf0000"
+  }
 }

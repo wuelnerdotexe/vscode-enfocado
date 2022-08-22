@@ -40,9 +40,9 @@ What you **won't have** if you **don't install Enfocado**:
 
 ## Usage
 
-### Syntax
+### Minimal syntax
 
-Master your theme, understand and recognize syntax, improve your muscle memory.
+Master your theme, understand and recognize minimal syntax, improve your muscle memory.
 
 | SELENIZED COLOR | HEX COLOR | HEX COLOR (light) |  TEXT TYPE  |       NATURE SYNTAX TOKENS        |        NEON SYNTAX TOKENS         |
 | --------------- | :-------: | :---------------: | :---------: | :-------------------------------: | :-------------------------------: |
@@ -58,7 +58,7 @@ Master your theme, understand and recognize syntax, improve your muscle memory.
 | Orange          | `#e67f43` |     `#d04a00`     |   `NONE`    |      Exceptions (`trycatch`)      |      Exceptions (`trycatch`)      |
 | Violet          | `#a580e2` |     `#7f51d6`     |   `NONE`    |         Support keywords          |             Keywords              |
 | Bright red      | `#ff5e56` |     `#bf0000`     |   `Bold`    |              Errors               |              Errors               |
-| Bright yellow   | `#83c746` |     `#008400`     |  `Italic`   |   Constant and readonly methods   |   Constant and readonly methods   |
+| Bright yellow   | `#83c746` |     `#008400`     | ~~`NONE`~~  |    ~~Not used in the syntax~~     |    ~~Not used in the syntax~~     |
 | Bright green    | `#efc541` |     `#af8500`     |  `Italic`   |              Methods              |         Language methods          |
 | Bright blue     | `#4f9cfe` |     `#0054cf`     |   `Bold`    |               Types               |           Support types           |
 | Bright magenta  | `#ff81ca` |     `#c7008b`     |  `Italic`   |         Language methods          |              Methods              |
@@ -66,7 +66,7 @@ Master your theme, understand and recognize syntax, improve your muscle memory.
 | Bright orange   | `#fa9153` |     `#ba3700`     | ~~`NONE`~~  |    ~~Not used in the syntax~~     |    ~~Not used in the syntax~~     |
 | Bright violet   | `#b891f5` |     `#6b40c3`     |   `Bold`    |           Support types           |               Types               |
 
-DISCLAIMER: **Enfocado** doesn't customize individual tokens for each language, it just defines the default base, if your syntax doesn't look as described here, it's not our responsibility, it's the responsibility of those who assign wrong tokens to some language's syntax, and we don't lose here our time in correcting those problems constantly.
+DISCLAIMER: **Enfocado** doesn't customize individual tokens for each language, it just defines the default base, if your syntax doesn't look as described here, it's not our responsibility, it's the responsibility of those who assign wrong tokens to some language's syntax, and we don't correct those problems constantly.
 
 ## Recommendations
 
@@ -132,8 +132,8 @@ In order for the **Human Writing** simulation to work as it should, I recommend 
 
 ### Extensions
 
-- It is recommended to install the official extensions that provide semantic highlighting to the language in which you work.
-- Also, for better problem alerts, it is recommended to install [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens) as **Enfocado** provides native support by default.
+- It is recommended to install the official extensions that provide semantic improvement to the language in which you work, to enrich the Minimal Syntax.
+- Also, for better alerts, it is recommended to install [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens) as **Enfocado** provides native support by default.
 
 ### Extras
 
