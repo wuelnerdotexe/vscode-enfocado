@@ -40,7 +40,7 @@ What you **won't have** if you **don't install Enfocado**:
 
 ## Usage
 
-### Minimal syntax
+### Syntax
 
 Master your theme, understand and recognize minimal syntax, improve your muscle memory.
 

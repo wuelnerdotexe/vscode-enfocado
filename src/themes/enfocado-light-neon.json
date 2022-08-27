@@ -879,6 +879,30 @@
     "type": { "fontStyle": "bold", "foreground": "#6b40c3" },
     "typeParameter": { "fontStyle": "bold", "foreground": "#6b40c3" },
     "variable": { "fontStyle": "", "foreground": "#dd0f9d" },
+    // Async modifier.
+    "class.async": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "comment.async": { "fontStyle": "italic", "foreground": "#878787" },
+    "decorator.async": { "fontStyle": "", "foreground": "#0064e4" },
+    "enum.async": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "enumMember.async": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "event.async": { "fontStyle": "italic", "foreground": "#008400" },
+    "function.async": { "fontStyle": "italic", "foreground": "#c7008b" },
+    "interface.async": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "keyword.async": { "fontStyle": "", "foreground": "#7f51d6" },
+    "label.async": { "fontStyle": "", "foreground": "#7f51d6" },
+    "macro.async": { "fontStyle": "", "foreground": "#7f51d6" },
+    "method.async": { "fontStyle": "italic", "foreground": "#c7008b" },
+    "namespace.async": { "fontStyle": "", "foreground": "#474747" },
+    "number.async": { "fontStyle": "", "foreground": "#474747" },
+    "operator.async": { "fontStyle": "", "foreground": "#7f51d6" },
+    "parameter.async": { "fontStyle": "", "foreground": "#dd0f9d" },
+    "property.async": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "regexp.async": { "fontStyle": "", "foreground": "#0064e4" },
+    "string.async": { "fontStyle": "", "foreground": "#00ad9c" },
+    "struct.async": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "type.async": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "typeParameter.async": { "fontStyle": "bold", "foreground": "#6b40c3" },
+    "variable.async": { "fontStyle": "", "foreground": "#dd0f9d" },
     // Declarations modifier.
     "class.declaration": { "fontStyle": "bold", "foreground": "#6b40c3" },
     "comment.declaration": { "fontStyle": "italic", "foreground": "#878787" },
@@ -1082,6 +1106,8 @@
     "variable.defaultLibrary": { "fontStyle": "", "foreground": "#1d9700" },
     // Abstract modifier.
     "*.abstract": "#c49700",
+    // Async abstract modifier.
+    "*.async.abstract": "#c49700",
     // Declaration abstract modifier.
     "*.declaration.abstract": "#c49700",
     // Definition abstract modifier.
@@ -1096,24 +1122,10 @@
     "*.static.abstract": "#c49700",
     // Default library abstract modifier.
     "*.defaultLibrary.abstract": "#c49700",
-    // Async modifier.
-    "*.async": "#c49700",
-    // Declaration async modifier.
-    "*.declaration.async": "#c49700",
-    // Definition async modifier.
-    "*.definition.async": "#c49700",
-    // Documentation async modifier.
-    "*.documentation.async": "#c49700",
-    // Local async modifier.
-    "*.local.async": "#c49700",
-    // Modification async modifier.
-    "*.modification.async": "#c49700",
-    // Static async modifier.
-    "*.static.async": "#c49700",
-    // Default library async modifier.
-    "*.defaultLibrary.async": "#c49700",
     // Readonly modifier.
     "*.readonly": "#c49700",
+    // Async readonly modifier.
+    "*.async.readonly": "#c49700",
     // Declaration readonly modifier.
     "*.declaration.readonly": "#c49700",
     // Definition readonly modifier.
@@ -1130,6 +1142,8 @@
     "*.defaultLibrary.readonly": "#c49700",
     // Deprecated modifier.
     "*.deprecated": "#bf0000",
+    // Aync deprecated modifier.
+    "*.async.deprecated": "#bf0000",
     // Declaration deprecated modifier.
     "*.declaration.deprecated": "#bf0000",
     // Definition deprecated modifier.
