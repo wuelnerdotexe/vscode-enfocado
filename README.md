@@ -4,6 +4,7 @@
 
 [![License Badge](https://img.shields.io/badge/License-MIT-3FC5B7.svg?style=for-the-badge)](https://github.com/wuelnerdotexe/vscode-enfocado/blob/main/LICENSE)
 [![README Style Badge](https://img.shields.io/badge/README%20Style-Standard-3FC5B7.svg?style=for-the-badge)](https://github.com/RichardLitt/standard-readme)
+[![Preview in vscode.dev](https://img.shields.io/badge/preview%20in-vscode.dev-3FC5B7.svg?style=for-the-badge)](https://vscode.dev/theme/wuelnerdotexe.vscode-enfocado)
 
 **Enfocado** is more than a theme, it is a concept of **"how themes should be"**, focusing on what is really important to developers: **the code and nothing else**.
 
