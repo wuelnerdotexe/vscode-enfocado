@@ -59,8 +59,8 @@ Master your theme, understand and recognize minimal syntax, improve your muscle 
 | Orange          | `#e67f43` |     `#d04a00`     |   `NONE`    |      Exceptions (`trycatch`)      |      Exceptions (`trycatch`)      |
 | Violet          | `#a580e2` |     `#7f51d6`     |   `NONE`    |         Support keywords          |             Keywords              |
 | Bright red      | `#ff5e56` |     `#bf0000`     |   `Bold`    |              Errors               |              Errors               |
-| Bright yellow   | `#83c746` |     `#008400`     | ~~`NONE`~~  |    ~~Not used in the syntax~~     |    ~~Not used in the syntax~~     |
-| Bright green    | `#efc541` |     `#af8500`     |  `Italic`   |              Methods              |         Language methods          |
+| Bright yellow   | `#efc541` |     `#af8500`     | ~~`NONE`~~  |    ~~Not used in the syntax~~     |    ~~Not used in the syntax~~     |
+| Bright green    | `#83c746` |     `#008400`     |  `Italic`   |              Methods              |         Language methods          |
 | Bright blue     | `#4f9cfe` |     `#0054cf`     |   `Bold`    |               Types               |           Support types           |
 | Bright magenta  | `#ff81ca` |     `#c7008b`     |  `Italic`   |         Language methods          |              Methods              |
 | Bright cyan     | `#56d8c9` |     `#009a8a`     | `Underline` |               Links               |               Links               |
@@ -82,7 +82,8 @@ For the best **Enfocado** experience, I recommend adding this setting to your VS
 "window.menuBarVisibility": "compact",
 "editor.renderLineHighlight": "none",
 "editor.minimap.enabled": false,
-"breadcrumbs.enabled": false,
+"breadcrumbs.enabled": true,
+"breadcrumbs.filePath": "off",
 
 // Disable unseless icons.
 "workbench.editor.showIcons": false,
